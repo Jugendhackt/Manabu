@@ -1,7 +1,7 @@
 <?php
 
 $driver = 'mysql';
-$host = 'db.google.de';
+$host = 'b.google.de';
 $dbname = 'manabu';
 $dsn = "$driver:host=$host;dbname=$dbname";
 
