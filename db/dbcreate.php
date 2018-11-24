@@ -3,7 +3,7 @@ require 'dbcon.php';
 
 $pdo->query("
   CREATE TABLE IF NOT EXISTS 
-    `User`(
+    `user`(
       `ID` INT UNIQUE NOT NULL AUTO_INCREMENT,
       `pname` VARCHAR(20) NOT NULL,
       `lname` VARCHAR(30) NOT NULL,
@@ -18,11 +18,10 @@ $pdo->query("
 
 $pdo->query("
   CREATE TABLE IF NOT EXISTS 
-    `Subject`(
+    `subject`(
       `ID` INT UNIQUE NOT NULL AUTO_INCREMENT,
-      `name` VARCHAR(20) NOT NULL,
-      `abbr` VARCHAR(10) NOT NULL,
-      `desc` VARCHAR NOT NULL,
+      `name` VARCHAR(50) NOT NULL UNIQUE,
+      `desc` TEXT NOT NULL,
       PRIMARY KEY(`ID`)
     )
     ENGINE = InnoDB CHARSET = utf8mb4 COLLATE utf8mb4_unicode_ci
@@ -30,22 +29,23 @@ $pdo->query("
 
 $pdo->query("
   CREATE TABLE IF NOT EXISTS
-    `Class`(
+    `class`(
       `ID` INT UNIQUE NOT NULL AUTO_INCREMENT,
       `name` VARCHAR(10) NOT NULL,
-      PRIMARY KEY(`KEY`)
+      PRIMARY KEY(`ID`)
     )
     ENGINE = InnoDB CHARSET = utf8mb4 COLLATE utf8mb4_unicode_ci
 ");
 
 $pdo->query("
   CREATE TABLE IF NOT EXISTS 
-    `Grades`(
+    `grade`(
       `ID` INT UNIQUE NOT NULL AUTO_INCREMENT,
-      `UID` INT UNIQUE NOT NULL,
-      `SID` INT UNIQUE NOT NULL,
+      `UID` INT NOT NULL,
+      `SID` INT NOT NULL,
       `grade` FLOAT NOT NULL,
       `weight` INT NOT NULL,
+      /* create date */
       PRIMARY KEY(`ID`)
     )
     ENGINE = InnoDB CHARSET = utf8mb4 COLLATE utf8mb4_unicode_ci

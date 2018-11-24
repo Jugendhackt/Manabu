@@ -15,7 +15,12 @@ switch($param) {
     case "edit-grade":
         break;
     case "addgrade":
+        require __DIR__ . '/../controllers/grades/addgrade.php';
+        break;
+    case "edit": // update ka + grades
+        require __DIR__ . '/../controllers/grades/editgrade.php';
         break;
     default:
+        require __DIR__ . '/../controllers/tree/displaytree.php';
         break;
 }

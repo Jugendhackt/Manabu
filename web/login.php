@@ -14,16 +14,18 @@ switch ($param) {
     $user = $_POST['user'];
     $passwd = $_POST['passwd'];
 
-    $prepLogin = $pdo->prepare("SELECT `passwd`, `nick`, `permissions` FROM `User` WHERE `nick` = :nick");
+    $prepLogin = $pdo->prepare("SELECT `passwd`, `nick`, `permissions`, `ID` FROM `User` WHERE `nick` = :nick");
     $prepLogin->execute(array(':nick' => $user));
     $res = $prepLogin->fetch();
 
     $dbPass = $res['passwd'];
     $dbUser = $res['nick'];
     $permissions = $res['permissions'];
+    $UID = $res['ID'];
 
     if(password_verify($passwd, $dbPass) && $user == $dbUser) {
         $_SESSION['logged_in'] = true;
+        $_SESSION['uid'] = $UID;
         header('Location: tree.php');
     } else {
         $smarty->assign('pageTitle', 'Anmeldung fehlgeschlagen');

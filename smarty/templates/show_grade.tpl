@@ -2,7 +2,7 @@
 {block name=main}
   <form action="?param=edit&amp;id={$id|escape:'html'|default:''}">
     <div>
-      <label for="name">Name</label>
+      <label for="name">Klassenarbeitsname</label>
       <input type="text" value="{$name|escape:'html'|default:''}" />
     </div>
     <div>
