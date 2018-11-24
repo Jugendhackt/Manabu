@@ -20,6 +20,9 @@ switch($param) {
     case "edit": // update ka + grades
         require __DIR__ . '/../controllers/grades/editgrade.php';
         break;
+    case 'detailSubject':
+        
+        break;
     default:
         require __DIR__ . '/../controllers/tree/displaytree.php';
         break;
