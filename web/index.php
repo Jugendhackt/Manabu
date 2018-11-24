@@ -1,14 +1,13 @@
 <?php
-  include 'incs/head.php';
-?>
 
-    <title>MANABU</title>
-  </head>
-  <body>
-    <form action="login.php" method="post">
-      <input type="text" name="user" placeholder="Benutzer" />
-      <input type="password" name="passwd" placeholder="Passwort" />
-      <input type="submit" name="submitpwd" value="SUBMIT" />
-    </form>
-  </body>
-</html>
+// setup smarty
+require __DIR__ . '/../vendor/autoload.php';
+$smarty = new Smarty();
+$smarty->setTemplateDir(__DIR__ . '/../smarty/templates');
+$smarty->setCompileDir(__DIR__ . '/../smarty/templates_c');
+$smarty->setConfigDir(__DIR__ . '/../smarty/config');
+$smarty->setCacheDir(__DIR__ . '/../tmp/smarty/cache');
+// setup finished
+
+$smarty->assign('pageTitle', 'LOGIN');
+$smarty->display('login.tpl');
