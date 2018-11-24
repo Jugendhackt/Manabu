@@ -26,6 +26,7 @@ switch ($param) {
         $_SESSION['logged_in'] = true;
         header('Location: tree.php');
     } else {
+        $smarty->assign('pageTitle', 'Anmeldung fehlgeschlagen');
         $smarty->display('login_failed.tpl');
     }
 

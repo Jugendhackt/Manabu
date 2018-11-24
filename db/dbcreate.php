@@ -16,4 +16,26 @@ $pdo->query("
     ENGINE = InnoDB CHARSET = utf8mb4 COLLATE utf8mb4_unicode_ci
 ");
 
-// subjects, class , join
+$pdo->query("
+  CREATE TABLE IF NOT EXISTS 
+    `Subject`(
+      `ID` INT UNIQUE NOT NULL AUTO_INCREMENT,
+      `name` VARCHAR(20) NOT NULL,
+      `abbr` VARCHAR(10) NOT NULL,
+      `desc` VARCHAR NOT NULL,
+      PRIMARY KEY(`ID`)
+    )
+    ENGINE = InnoDB CHARSET = utf8mb4 COLLATE utf8mb4_unicode_ci
+");
+
+$pdo->query("
+  CREATE TABLE IF NOT EXISTS
+    `Class`(
+      `ID` INT UNIQUE NOT NULL AUTO_INCREMENT,
+      `name` VARCHAR(10) NOT NULL,
+      PRIMARY KEY(`KEY`)
+    )
+    ENGINE = InnoDB CHARSET = utf8mb4 COLLATE utf8mb4_unicode_ci
+");
+
+// join
