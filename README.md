@@ -1,3 +1,3 @@
 # MANABU
 
-A mark overview and controll app.
+A school mark overview and controll app.
