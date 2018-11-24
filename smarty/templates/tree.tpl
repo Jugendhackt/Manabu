@@ -12,8 +12,5 @@
         </div>
       {/foreach}
     </div>
-    {foreachelse}
-      <div class="nosubject">Keine Fächer</div>
-    {/foreachelse}
   {/foreach}
 </div>
