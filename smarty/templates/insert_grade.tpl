@@ -4,6 +4,7 @@
     <div>
       <label for="subject">Fach</label>
       <select name="subject">
+        <option></option>
        {html_options values=$subjects|escape="html" output=$subjects|escape="html" selected=$selectedSubject}
      </select>
     </div>
