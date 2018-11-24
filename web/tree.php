@@ -21,7 +21,7 @@ switch($param) {
         require __DIR__ . '/../controllers/grades/editgrade.php';
         break;
     case 'detailSubject':
-        
+        require __DIR__ . '/../controllers/tree/displaybranch.php';
         break;
     default:
         require __DIR__ . '/../controllers/tree/displaytree.php';
