@@ -1,11 +1,11 @@
 <?php
 
 $driver = 'mysql';
-$host = 'localhost';
+$host = 'db.google.de';
 $dbname = 'manabu';
 $dsn = "$driver:host=$host;dbname=$dbname";
 
-$user = 'manabu';
-$pswd = 'jh18';
+$user = 'root';
+$pswd = 'root';
 
 $pdo = new PDO($dsn, $user, $pswd);
