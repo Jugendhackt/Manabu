@@ -1,4 +1,4 @@
 /vendor/
 /tmp/
 /db/dbcon.php
-.idea/
+/.idea/
