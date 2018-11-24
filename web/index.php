@@ -2,12 +2,8 @@
 
 // setup smarty
 require __DIR__ . '/../vendor/autoload.php';
-$smarty = new Smarty();
-$smarty->setTemplateDir(__DIR__ . '/../smarty/templates');
-$smarty->setCompileDir(__DIR__ . '/../smarty/templates_c');
-$smarty->setConfigDir(__DIR__ . '/../smarty/config');
-$smarty->setCacheDir(__DIR__ . '/../tmp/smarty/cache');
+require __DIR__ . '/../incs/smartyimport.php';
 // setup finished
 
-$smarty->assign('pageTitle', 'LOGIN');
-$smarty->display('login.tpl');
+$smarty->assign('pageTitle', 'Hallo Welt');
+$smarty->display('index.tpl');
