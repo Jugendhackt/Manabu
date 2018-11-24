@@ -14,8 +14,6 @@ switch ($param) {
     $user = $_POST['user'];
     $passwd = $_POST['passwd'];
 
-    echo $user, $passwd;
-
     $prepLogin = $pdo->prepare("SELECT `passwd`, `nick`, `permissions` FROM `User` WHERE `nick` = :nick");
     $prepLogin->execute(array(':nick' => $user));
     $res = $prepLogin->fetch();
@@ -28,7 +26,7 @@ switch ($param) {
         $_SESSION['logged_in'] = true;
         header('Location: tree.php');
     } else {
-        $smarty->display('login_failed.tlp');
+        $smarty->display('login_failed.tpl');
     }
 
     break;
