@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-24 20:19:28
+/* Smarty version 3.1.33, created on 2018-11-24 21:13:58
   from '/var/www/html/manabu/smarty/templates/main.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bf9a440900148_66250886',
+  'unifunc' => 'content_5bf9b106e27dd4_36956593',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a4bf84a205f53cdcc6f5fb2f51d218c621a48837' => 
     array (
       0 => '/var/www/html/manabu/smarty/templates/main.tpl',
-      1 => 1543086972,
+      1 => 1543090319,
       2 => 'file',
     ),
   ),
@@ -20,24 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bf9a440900148_66250886 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bf9b106e27dd4_36956593 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18259472355bf9a4408fee99_83739315', "head");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20084890405bf9b106e1dfa6_67332751', "head");
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "basic.tpl");
 }
 /* {block "head"} */
-class Block_18259472355bf9a4408fee99_83739315 extends Smarty_Internal_Block
+class Block_20084890405bf9b106e1dfa6_67332751 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'head' => 
   array (
-    0 => 'Block_18259472355bf9a4408fee99_83739315',
+    0 => 'Block_20084890405bf9b106e1dfa6_67332751',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -53,7 +53,10 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 <?php echo '<script'; ?>
  src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"><?php echo '</script'; ?>
 >
-<link rel="stylesheet" href="src/fist.png" />
+<link rel="stylesheet" href="style/style.css" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <?php
 }
 }
