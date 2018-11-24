@@ -1,0 +1,11 @@
+{
+    "name": "jh18/manabu",
+    "description": "a project for mark controll and overview",
+    "type": "project",
+    "require": {
+        "smarty/smarty": "^3.1",
+        "bjeavons/zxcvbn-php": "^0.4.0",
+        "monolog/monolog": "^1.24"
+    },
+    "license": "MIT"
+}
