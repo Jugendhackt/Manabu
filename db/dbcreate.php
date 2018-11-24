@@ -38,4 +38,15 @@ $pdo->query("
     ENGINE = InnoDB CHARSET = utf8mb4 COLLATE utf8mb4_unicode_ci
 ");
 
-// join
+$pdo->query("
+  CREATE TABLE IF NOT EXISTS 
+    `Grades`(
+      `ID` INT UNIQUE NOT NULL AUTO_INCREMENT,
+      `UID` INT UNIQUE NOT NULL,
+      `SID` INT UNIQUE NOT NULL,
+      `grade` FLOAT NOT NULL,
+      `weight` INT NOT NULL,
+      PRIMARY KEY(`ID`)
+    )
+    ENGINE = InnoDB CHARSET = utf8mb4 COLLATE utf8mb4_unicode_ci
+");
