@@ -15,5 +15,13 @@ if (empty($subjectsGrades)) {
 } else {
   $smarty->assign('grades', $subjectsGrades);
   $smarty->assign('subjectname', $subjectsGrades[0]['name']);
+  $devider = 0;
+  $average1 = 0.0;
+  foreach ($subjectsGrades as $grade) {
+    $average1 +=  $grade['weight'] * $grade['grade'];
+    $devider += $grade['weight'];
+  }
+  $average = $average1/$devider;
+  $smarty->assign('average', $average);
 }
 $smarty->display('displaybranch.tpl');
