@@ -10,7 +10,7 @@
     </div>
     <div class="">
     {foreach from=$grades item=$grade}
-      <div class="grade mt-3 bg-primary p-2 align-center">
+      <div class="grade mt-3 p-2 align-center">
           <div class="name">Gewichtung: {$grade.weight|escape: "html"}</div>
           <div class="value">Note: {$grade.grade|escape: "html"}</div>
       </div>

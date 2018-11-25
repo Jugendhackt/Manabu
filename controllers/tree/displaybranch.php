@@ -24,4 +24,5 @@ if (empty($subjectsGrades)) {
   $average = round($average1/$devider,4);
   $smarty->assign('average', $average);
 }
+$smarty->assign('mainClass', 'mainBranch');
 $smarty->display('displaybranch.tpl');

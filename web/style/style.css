@@ -10,3 +10,10 @@
 .tree {
     position: absolute;
 }
+
+.mainBranch {
+    background-image: url("/src/manabu\ ast.svg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}

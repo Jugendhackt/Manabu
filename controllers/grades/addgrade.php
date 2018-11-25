@@ -16,7 +16,7 @@ if(isset($_POST['submitGrade'])) {
     $insGrade->bindParam('sid', $sid);
     $insGrade->bindParam('uid', $uid);
     $insGrade->execute();
-    header('Location: tree.php');
+    header('Location: tree.php?param=detailSubject&amp;sid=' . htmlspecialchars($sid));
 } else {
     $smarty->assign('pageTitle', 'Note hinzufügen');
     $subjects = $pdo->query('SELECT `name` FROM `subject`;'); //$datenbankverbinungsobjekt->();
