@@ -1,6 +1,12 @@
 .mainTree {
     background-image: url("/src/fist.png");
-    background-size: 100vh;
+    background-size: 70% 100%;
     background-repeat: no-repeat;
+    background-position-x: center;
     height: 100vh;
+    position: relative;
+}
+
+.tree {
+    position: absolute;
 }
