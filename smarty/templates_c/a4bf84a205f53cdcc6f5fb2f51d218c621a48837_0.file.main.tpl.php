@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-25 11:55:51
+/* Smarty version 3.1.33, created on 2018-11-25 12:06:44
   from '/var/www/html/manabu/smarty/templates/main.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bfa7fb7a0f7f7_59500171',
+  'unifunc' => 'content_5bfa824437ea25_60563896',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a4bf84a205f53cdcc6f5fb2f51d218c621a48837' => 
     array (
       0 => '/var/www/html/manabu/smarty/templates/main.tpl',
-      1 => 1543142787,
+      1 => 1543143969,
       2 => 'file',
     ),
   ),
@@ -20,28 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bfa7fb7a0f7f7_59500171 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bfa824437ea25_60563896 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4450278665bfa7fb7a0dae3_27419349', "head");
-?>
-
-<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14492817085bfa7fb7a0ed05_18900891', "header");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6633842215bfa824437dc24_57017927', "head");
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "basic.tpl");
 }
 /* {block "head"} */
-class Block_4450278665bfa7fb7a0dae3_27419349 extends Smarty_Internal_Block
+class Block_6633842215bfa824437dc24_57017927 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'head' => 
   array (
-    0 => 'Block_4450278665bfa7fb7a0dae3_27419349',
+    0 => 'Block_6633842215bfa824437dc24_57017927',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -63,21 +59,4 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 }
 /* {/block "head"} */
-/* {block "header"} */
-class Block_14492817085bfa7fb7a0ed05_18900891 extends Smarty_Internal_Block
-{
-public $subBlocks = array (
-  'header' => 
-  array (
-    0 => 'Block_14492817085bfa7fb7a0ed05_18900891',
-  ),
-);
-public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
-?>
-
-  <h1>Manabu</h1>
-<?php
-}
-}
-/* {/block "header"} */
 }
