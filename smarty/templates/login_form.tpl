@@ -9,6 +9,6 @@
       <label for="passwd">Passwort</label>
       <input type="password" id="passwd" class="form-control" name="passwd" placeholder="Passwort" />
     </div>
-    <button type="submit" name="login" class="btn btn-success">Anmelden</button>
+    <button type="submit" name="login" class="btn btn-primary">Anmelden</button>
   </form>
 {/block}

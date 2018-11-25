@@ -10,6 +10,6 @@
       <input type="number" name="grade" value="{$grade|escape:'html'|default:''}" />
     </div>
     <input type="hidden" value="{$id|escape:'html'|default:''}" />
-    <button>Updaten</button>
+    <button class="btn btn-primary">Updaten</button>
   </form>
 {/block}

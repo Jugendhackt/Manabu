@@ -10,5 +10,6 @@
     </div>
   {/foreach}
 </div>
+<div class="fixed-bottom"><a href="?param=addgrade" class="btn btn-primary btn-large m-5">Neu</a></div>
 
 {/block}

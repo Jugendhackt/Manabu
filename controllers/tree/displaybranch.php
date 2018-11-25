@@ -21,7 +21,7 @@ if (empty($subjectsGrades)) {
     $average1 +=  $grade['weight'] * $grade['grade'];
     $devider += $grade['weight'];
   }
-  $average = $average1/$devider;
+  $average = round($average1/$devider,4);
   $smarty->assign('average', $average);
 }
 $smarty->display('displaybranch.tpl');
