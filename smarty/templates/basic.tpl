@@ -6,7 +6,7 @@
     {block name=head}{/block}
   </head>
   <body>
-    <header>
+    <header class="header">
       {block name=header}{/block}
     </header>
     <main class="{$mainClass|escape:"html"|default:""}">

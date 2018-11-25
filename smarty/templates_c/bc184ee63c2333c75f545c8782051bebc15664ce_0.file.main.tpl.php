@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-24 21:02:58
+/* Smarty version 3.1.33, created on 2018-11-25 11:39:29
   from '/home/jonathan/proj/Programme/jHackt/JugendHackt_Manabu/smarty/templates/main.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bf9ae72340aa8_36043753',
+  'unifunc' => 'content_5bfa7be1077ae5_37581064',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'bc184ee63c2333c75f545c8782051bebc15664ce' => 
     array (
       0 => '/home/jonathan/proj/Programme/jHackt/JugendHackt_Manabu/smarty/templates/main.tpl',
-      1 => 1543089772,
+      1 => 1543142366,
       2 => 'file',
     ),
   ),
@@ -20,24 +20,28 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bf9ae72340aa8_36043753 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bfa7be1077ae5_37581064 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12775866385bf9ae7233fe80_25313213', "head");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4213916275bfa7be106eb82_43129927', "head");
+?>
+
+<?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8497901835bfa7be1074b46_39822355', "header");
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "basic.tpl");
 }
 /* {block "head"} */
-class Block_12775866385bf9ae7233fe80_25313213 extends Smarty_Internal_Block
+class Block_4213916275bfa7be106eb82_43129927 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'head' => 
   array (
-    0 => 'Block_12775866385bf9ae7233fe80_25313213',
+    0 => 'Block_4213916275bfa7be106eb82_43129927',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -54,11 +58,26 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
  src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"><?php echo '</script'; ?>
 >
 <link rel="stylesheet" href="style/style.css" />
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <?php
 }
 }
 /* {/block "head"} */
+/* {block "header"} */
+class Block_8497901835bfa7be1074b46_39822355 extends Smarty_Internal_Block
+{
+public $subBlocks = array (
+  'header' => 
+  array (
+    0 => 'Block_8497901835bfa7be1074b46_39822355',
+  ),
+);
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
+  <h1>Manabu</h1>
+<?php
+}
+}
+/* {/block "header"} */
 }
