@@ -1,7 +1,7 @@
 {extends file="main.tpl"}
 {block name=main}
 <div class="container">
-  <a href="?" class="button">Zurück</a>
+  <a href="?" class="btn btn-primary mt-2">&lt; Zurück</a>
 </div>
   <div class="branch container">
     <div class="">

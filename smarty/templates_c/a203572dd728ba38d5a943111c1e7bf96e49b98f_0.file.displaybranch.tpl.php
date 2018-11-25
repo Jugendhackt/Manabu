@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-25 11:08:40
+/* Smarty version 3.1.33, created on 2018-11-25 11:34:48
   from '/home/jonathan/proj/Programme/jHackt/JugendHackt_Manabu/smarty/templates/displaybranch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bfa74a8e75651_39121534',
+  'unifunc' => 'content_5bfa7ac8728fe8_01706459',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a203572dd728ba38d5a943111c1e7bf96e49b98f' => 
     array (
       0 => '/home/jonathan/proj/Programme/jHackt/JugendHackt_Manabu/smarty/templates/displaybranch.tpl',
-      1 => 1543140518,
+      1 => 1543142085,
       2 => 'file',
     ),
   ),
@@ -20,31 +20,31 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bfa74a8e75651_39121534 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bfa7ac8728fe8_01706459 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7323435785bfa74a8e57463_16135489', 'main');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1173027215bfa7ac8722523_80206534', 'main');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "main.tpl");
 }
 /* {block 'main'} */
-class Block_7323435785bfa74a8e57463_16135489 extends Smarty_Internal_Block
+class Block_1173027215bfa7ac8722523_80206534 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'main' => 
   array (
-    0 => 'Block_7323435785bfa74a8e57463_16135489',
+    0 => 'Block_1173027215bfa7ac8722523_80206534',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <div class="container">
-  <a href="?" class="button">Zurück</a>
+  <a href="?" class="btn btn-primary mt-2">&lt; Zurück</a>
 </div>
   <div class="branch container">
     <div class="">
