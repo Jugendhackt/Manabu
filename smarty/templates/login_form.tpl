@@ -1,6 +1,6 @@
 {extends file="main.tpl"}
 {block name=main}
-  <form action="login.php?param=login" method="post" class="align-middle m-3">
+  <form action="login.php?param=login" method="post" class="align-middle m-3 p-2">
     <div class="form-group">
       <label for="user">Nutzername</label>
       <input type="text" id="user" name="user" class="form-control" placeholder="Benutzer" />
