@@ -7,3 +7,5 @@ require __DIR__ . '/../incs/smartyimport.php';
 
 $smarty->assign('pageTitle', 'Hallo Welt');
 $smarty->display('index.tpl');
+
+header('Location: login.php');
