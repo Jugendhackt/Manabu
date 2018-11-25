@@ -15,6 +15,7 @@ foreach ($subjRes as $subject) {
 }
 //var_dump($subjectsArray); die();
 $smarty->assign('pageTitle', 'Fächerübersicht');
+$smarty->assign('mainClass', 'mainTree');
 $smarty->assign('subjectsArray',$subjectsArray);
 $smarty->display('tree.tpl');
 // got grades and subject
